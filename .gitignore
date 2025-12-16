@@ -29,3 +29,5 @@ TESTING_PLAN.md
 
 .cursor/
 dist/
+
+*.zip
