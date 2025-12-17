@@ -4,7 +4,6 @@ import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
-  // @ts-expect-error - pnpm version resolution causes type mismatch between vite instances  
   plugins: [react()],
   resolve: {
     alias: {
