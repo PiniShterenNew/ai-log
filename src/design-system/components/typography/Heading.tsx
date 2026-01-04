@@ -20,20 +20,20 @@ export interface HeadingProps extends Omit<React.HTMLAttributes<HTMLHeadingEleme
 }
 
 const levelMap = {
-  1: 'text-4xl font-bold',
-  2: 'text-3xl font-bold',
-  3: 'text-2xl font-semibold',
-  4: 'text-xl font-semibold',
-  5: 'text-lg font-semibold',
-  6: 'text-base font-semibold',
+  1: 'text-4xl font-bold tracking-tight',
+  2: 'text-3xl font-bold tracking-tight',
+  3: 'text-2xl font-semibold tracking-tight',
+  4: 'text-xl font-semibold tracking-tight',
+  5: 'text-lg font-semibold tracking-tight',
+  6: 'text-base font-semibold tracking-tight',
 };
 
 const variantMap = {
   'default': '',
-  'section': 'text-lg font-semibold',
-  'card': 'text-base font-semibold',
-  'card-truncate': 'text-base font-semibold line-clamp-2',
-  'card-title-truncate': 'text-base font-semibold whitespace-nowrap overflow-hidden text-ellipsis',
+  'section': 'text-lg font-semibold tracking-tight',
+  'card': 'text-base font-semibold tracking-tight',
+  'card-truncate': 'text-base font-semibold tracking-tight line-clamp-2',
+  'card-title-truncate': 'text-base font-semibold tracking-tight whitespace-nowrap overflow-hidden text-ellipsis',
 };
 
 export function Heading({

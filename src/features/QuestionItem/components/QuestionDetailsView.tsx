@@ -10,7 +10,7 @@ export function QuestionDetailsView({
     <Stack variant="section">
       <BackButton to="/questions" preserveState={true} />
 
-      <Card variant="panel-lg">
+      <Card variant="panel-lg" className="border border-white/60 bg-white/80 shadow-lg">
         <Stack variant="list-loose">
           {/* Question Section */}
           <Stack variant="card">
