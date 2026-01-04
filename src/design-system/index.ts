@@ -13,6 +13,7 @@ export * from './components/controls/Button';
 export * from './components/controls/Select';
 export * from './components/controls/SearchInput';
 export * from './components/controls/DatePicker';
+export * from './components/controls/Switch';
 export * from './components/date-range/DateRangePicker';
 
 
@@ -36,6 +37,8 @@ export * from './components/navigation/Breadcrumbs';
 
 export * from './components/overlay/Tooltip';
 export * from './components/overlay/Popover';
+export * from './components/overlay/Modal';
+export * from './components/overlay/Drawer';
 export { Popover, PopoverTrigger } from './components/ui/popover';
 
 export * from './components/actions/CopyButton';
