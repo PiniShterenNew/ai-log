@@ -73,15 +73,15 @@ export function QuestionsListPage() {
                 }}
               />
 
-              <Stack variant="header-center">
+              <Stack variant="header-center" className="flex-col gap-3 sm:flex-row sm:items-center">
                 <FiltersPanel
                   from={from}
                   to={to}
                   onFromChange={setFrom}
                   onToChange={setTo}
                   onClear={handleClearFilters}
-                  isOpen={isFiltersOpen}
-                  onToggle={() => setIsFiltersOpen(!isFiltersOpen)}
+                  open={isFiltersOpen}
+                  onOpenChange={setIsFiltersOpen}
                 />
 
                 <SortControl value={sort} onChange={setSort} />

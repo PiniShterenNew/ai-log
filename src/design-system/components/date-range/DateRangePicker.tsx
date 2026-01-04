@@ -53,7 +53,11 @@ export const DateRangePicker = ({
           {displayValue}
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-auto p-0" align="center" side="bottom">
+      <PopoverContent
+        className="w-[calc(100vw-2rem)] max-w-[26rem] p-0 sm:w-auto sm:max-w-none"
+        align="center"
+        side="bottom"
+      >
         <Calendar
           value={value}
           onChange={handleCalendarChange}

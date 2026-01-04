@@ -10,8 +10,7 @@ function App() {
         title="AI Question Log"
         user={{ name: 'Current User' }}
         onSettingsClick={() => {
-          // TODO: Implement settings
-          console.log('Settings clicked');
+          router.navigate('/settings');
         }}
       />
       <div className={cn('flex-1 overflow-hidden')}>
