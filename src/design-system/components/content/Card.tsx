@@ -32,8 +32,8 @@ const variantMap = {
   'default': '',
   'content': 'p-5',
   'content-lg': 'p-6 md:p-8',
-  'panel': 'p-5 bg-slate-50',
-  'panel-lg': 'p-6 md:p-8 bg-slate-50',
+  'panel': 'p-5 bg-slate-50/80',
+  'panel-lg': 'p-6 md:p-8 bg-slate-50/80',
 };
 
 export function Card({
@@ -49,7 +49,7 @@ export function Card({
     <ShadcnCard
       className={cn(
         variantMap[variant],
-        hover && 'transition-shadow hover:shadow-md',
+        hover && 'transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:border-slate-300/80',
         isClickable && 'cursor-pointer',
         className
       )}

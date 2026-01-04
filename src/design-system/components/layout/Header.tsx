@@ -18,9 +18,12 @@ export function Header({ title, user, onSettingsClick, className }: HeaderProps)
   return (
     <Stack
       variant="header-center"
-      className={cn('w-full bg-white border-b border-slate-200 px-4 py-4 sm:px-6 lg:px-8', className)}
+      className={cn(
+        'sticky top-0 z-30 w-full border-b border-slate-200/70 bg-white/80 px-4 py-4 shadow-sm backdrop-blur-xl sm:px-6 lg:px-8',
+        className
+      )}
     >
-      <Heading level={1} variant="default">
+      <Heading level={1} variant="default" className="text-2xl font-semibold tracking-tight text-slate-900">
         {title}
       </Heading>
       
@@ -42,4 +45,3 @@ export function Header({ title, user, onSettingsClick, className }: HeaderProps)
     </Stack>
   );
 }
-

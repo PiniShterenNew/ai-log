@@ -25,7 +25,7 @@ export function QuestionDetailsPage() {
   }
 
   return (
-    <PageShell variant="padded">
+    <PageShell variant="wide-padded">
       <Stack variant="list">
         <Breadcrumbs
           items={[
